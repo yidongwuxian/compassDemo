@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="stylesheets/ie.css">
+  <link rel="stylesheet" href="stylesheets/print.css">
+  <link rel="stylesheet" href="stylesheets/screen.css">
+  <link rel="stylesheet" href="stylesheets/share.css">
+  <link rel="stylesheet" href="stylesheets/indexSprite.css">
+  <link rel="stylesheet" href="stylesheets/global.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <script type="text/javascript" src="js/jquery1x.min.js"></script>
+</head>
+<body>
+<div class="header-nav" id="header-nav">
+    <div class="wraper clear">
+        <h1 class="header-logo fl">
+            <p class="fl">
+                <a href="${empty ctx ? '/' : ctx}" class="share-bx_logo bx-logo"></a> 
+            </p>
+        </h1>
+        <ul class="main-nav fl">
+            <li><a href="${empty ctx ? '/' : ctx}">首页</a></li>
+            <li class="sub-list drop-menu">
+                <a href="#">服务类型</a>
+                <i></i>
+                <dl class="drop-down sub-nav" >
+                    <dd>
+                        <a href="/bny-reservation">邦你盈</a>
+                    </dd>
+                    <dd>
+                        <a href="/project">项目列表</a>
+                    </dd>
+                    <dd>
+                        <a href="/foundation">基金专区</a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="sub-list drop-menu">
+                <a href="#">会员指引</a>
+                <i></i>
+                <dl class="drop-down sub-nav" style="display: none;">
+                    <dd>
+                        <a href="/member-guide/intro" >会员介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="/member-guide/joinus" >入会流程</a>
+                    </dd>
+                </dl>
+            </li>        
+            <li  class="sub-list drop-menu">
+                <a href="#">关于我们</a>
+                <i></i>
+                <dl class="drop-down sub-nav" style="display: none;">
+                    <dd>
+                        <a href="/about/plat-present">平台介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="/about/contactus">联系我们</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="nav-quick-menu fr">
+              <div class="nav-login fl">
+                  <a href="/login" class="nav-login-btn">登录</a> 
+              </div>
+          </div>
+    </div>
+</div>
+  <div class="index-banner focus-w" id="index_top">
+    <div id="index_scroll">
+          <div class="index_scroll-img1">
+              <a href="${empty ctx ? '/' : ctx}" target="_blank" >
+              <img class="img" src="images/banner_2.jpg" height="400" width="2560" alt=""></a>
+          </div>
+          <div  class="index_scroll-img2">
+              <a href="/bny-reservation" target="_blank" >
+              <img class="img" src="images/banner_1.jpg" height="400" width="2560" alt=""></a>
+          </div>
+    </div>
+  </div>
+  <div class="i-summary">
+    <div class="summary-box clear">
+      <div class="i-Platform">
+        <div class="index-sprite"></div>
+        <h3>邦你盈预约平台</h3>
+        <span>稳定、高收益理财项目</span>
+      </div>
+      <div class="i-invest">
+        <div class="index-sprite"></div>
+        <h3>投资交易信息</h3>
+        <span>投融资信息服务平台</span>
+      </div>
+      <div class="i-forward">
+        <div class="index-sprite"></div>
+        <h3>敬请期待</h3>
+        <span>业界前沿，无限可能</span>
+      </div>
+    </div>
+  </div>
+  <div class="i-mainwrap">
+    <div class="i-main clear">
+      <div class="i-table fl">
+        <div class="pro-list ">
+             <div class="cont">
+                <div class="pagination-con">
+                  <h3 class="pro-tit">推荐项目 <a href="/project" target="_self">更多 >></a></h3>
+                  <table class="pro-table">
+                    <thead>
+                      <tr class="table-tit">
+                        <th width="299" class="text-left">名称</th>
+                        <th width="122">金额(元)</th>
+                        <th width="114">期限</th>
+                        <th width="200">预期收益率</th>
+                        <th width="146"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="pro-tbody">
+                <tr>
+                  <td class="text-left"></td>
+                  <td>
+                    邦你盈s20160801
+                  </td>
+                  <td>
+                    <span class="font-red">9个月</span>
+                    <span class="font-red">180天</span>
+                  </td>
+                  <td>
+                      <span class="font-red">议定</span>
+                      <span class="font-red">年化 11%</span>
+                      <span class="font-red">月化 3.75‰</span>
+                      <span class="font-red">日化 0.32%%</span>
+                  </td>
+                  <td>
+                    <a href="/project/${pro.id}" class="todetail">查看详情</a>
+                  </td>
+                </tr>
+                    </tbody>
+                  </table>
+                  <p style="font-size:30px;color:#F90;text-align: center;margin-top:50px; display:none;">敬请期待</p>
+                </div>
+            </div>
+        </div>      
+      </div>
+      <div class="i-artical fr">
+        <div class="artical-left fl">
+          <div class="scroll-top">
+            <h2>邦你盈</h2>
+            <span>已成功<a href="#">预约</a></span>
+          </div>
+          <div class="scroll-bottom">
+            <h2></h2>
+            <span>（万元）</span>
+          </div>      
+        </div>
+        <div class="artical-right fr">
+          <div class="project-top">
+            <h2>项目成交</h2>
+            <span>已成功<a href="#">交易</a></span>
+          </div>
+          <div class="project-bottom">
+            <h2></h2>
+            <span>（万元）</span>
+          </div>
+        </div>
+        <div class="d-ad fl">
+          <span>公告</span>
+          <a href="/eastlending-info/notice" target="_self">更多 >></a>
+        </div>
+        <ul class="ad-list fl">
+          <li><a href="/notice/20151029190000" target="_blank">东方汇金融信息服务平台正式上线</a></li>
+          <li>东方资产互联网金融试水加速 东方汇战略升级定位</li>
+          <li>东方资产互联网金融试水加速 东方汇战略升级定位</li>
+          <li>东方资产互联网金融试水加速 东方汇战略升级定位</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="i-newswrap">
+    <div class="i-news clear">
+      <div class="news-left fl">
+        <div class="news-title">
+          <span>新闻资讯</span>
+          <a href="#">更多 >></a>
+        </div>
+        <ul class="news-list">
+          <li>
+            <img src="images/new.png" alt="">
+            <h4>东方资产开展“普及金融知识服</h4>
+            <span>2015年9月至10月，东方资产及旗下东方邦信在全国各地开展了普及金融知</span>
+          </li>
+          <li>
+            <img src="images/new.png" alt="">
+            <h4>东方资产开展“普及金融知识服</h4>
+            <span>2015年9月至10月，东方资产及旗下东方邦信在全国各地开展了普及金融知识服务</span>
+          </li>
+          <li>
+            <img src="images/new.png" alt="">
+            <h4>东方资产开展“普及金融知识服</h4>
+            <span>2015年9月至10月，东方资产及旗下东方邦信在全国各地开展了普及金融</span>
+          </li>
+          <li>
+            <img src="images/new.png" alt="">
+            <h4>东方资产开展“普及金融知识服</h4>
+            <span>2015年9月至10月，东方资产及旗下东方邦信在全国各地开展了普及金</span>
+          </li>
+        </ul>
+      </div>
+      <div class="news-right fr">
+        <div class="d-ad i-cnotact">
+          <span>联系我们</span>
+        </div>
+        <div class="i-ears">        
+        </div>
+        <div class="i-tel">
+          010-50980164
+        </div>
+        <div class="i-time">
+          客服热线周一至周五 8:00 - 18:00
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="i-choice clear">
+    <h2>为什么选择东方汇？</h2>
+    <div class="choice-team">
+      <div class="index-sprite"></div>
+      <h3>业界领先的风控团队</h3>
+      <p>严格的风控体系：</p>
+      <ul>
+        <li>1、机构准入</li>
+        <li>2、产品遴选</li>
+        <li>3、风险管控</li>
+        <li>4、过程管控</li>
+        <li>5、风险应急</li>
+      </ul>
+    </div>
+    <div class="choice-platform">
+      <div class="index-sprite"></div>
+      <h3>可靠、安全的信息平台</h3>
+      <span>结合全球金融发展与互联网技术，通过风险管理领域的多年实践经验和互联网领域的高端人才积累，为资产提供者和投资者创建一个中国领先的开放、便捷、安全的金融信息服务平台</span>
+    </div>
+    <div class="choice-bg">
+      <div class="index-sprite"></div>
+      <h3>金融央企背景</h3>
+      <span>平台依托强大的集团背景和股东背景，致力于通过不断的业务创新，为广大会员提供专业、高效、安全的综合性金融信息服务</span>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-center wraper">
+      
+      <div class="footer-left">
+         <dl>
+          <dt><a>关于我们</a></dt>
+          <dd><a href="/about/plat-present">平台介绍</a></dd>
+          <dd><a href="/about/contactus">联系我们</a></dd>
+         </dl>
+         <dl>
+          <dt><a>东方汇资讯</a></dt>
+          <dd><a href="/eastlending-info/notice">公告</a></dd>
+          <dd><a href="/eastlending-info/help">帮助</a></dd>
+         </dl>
+         <dl>
+          <dt><a>安全保障</a></dt>
+          <dd><a href="/safe/plat-safe" >平台安全</a></dd>
+          <dd><a href="/safe/data-safe" >数据与信息安全</a></dd>
+          <dd><a href="/safe/secret" >隐私保密</a></dd>
+         </dl>
+      </div>
+      <div class="footer-right">
+        <ul class="social-company">
+            <li class="corp-s"><a href="https://www.eastlending.com/"  target="_blank" title="东方汇"><s class="so-company1  ft-rp"></s><span>东方汇</span></a></li>
+            <li><a href="http://www.bxfinance.com/html/banghui/" target="_blank" title="东方邦信融通控股股份有限公司"><s class="so-company2  ft-rp"></s><span>东方邦信融通控股股份有限公司</span></a></li>
+            <li class="corp-s"><a href="http://www.bxfinance.com/html/jinke/" target="_blank" title="东方邦信金融科技"><s class="so-company3  ft-rp"></s><span>东方邦信金融科技</span></a></li>
+            <li><a href="http://www.coamc.com.cn" target="_blank" title="中国东方资产管理公司"><s class="so-company4  ft-rp"></s><span>中国东方资产管理公司</span></a></li>
+        </ul>
+        <ul class="social-icons">
+          <a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.eastlending.com&amp;lang=zh_cn" target="_blank" title="SSL安全加密"><li class="SSL  ft-rp"></li></a>
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e14043031011548399fbjr000000&amp;comefrom=trust" target="_blank" title="可信网站"><li class="kexin  ft-rp"></li></a>
+            <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1090007440" target="_blank" title="网信认证"><li class="web-trust  ft-rp"></li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-footer">
+    <div class="nav-footer-center clear wraper">
+        <div class="beizhuhao">
+            <div class="hot-number fl"><s></s> 010-50980164<span>(客服热线周一至周五8:00 - 18:00)</span></div>
+            <a class="fr" href="http://www.bxfinance.com/html/jinke/" target="_blank">东方邦信金融科技（上海）有限公司<span class="nbr13"></span>沪ICP备14012529号</a>　　
+        </div>
+    </div>    
+  </div>
+</div>
+  <script type="text/javascript" src="js/common.js" ></script>
+  <script type="text/javascript" src="js/jquery.form.min.js" ></script>
+  <script type="text/javascript" src="js/slick.min.js" ></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
